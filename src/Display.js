@@ -1,43 +1,20 @@
 import React from "react";
-import Menu from "./Menu";
 
 function Display(prop) {
 
-    let menu = prop.menu;
+    let display = prop.menu.display;
 
     return (
         <>
-            {(menu.name === "Music") ? <Menu menu={menu.display.subMenu} /> : <div style={styles.container}>
-                <img style={styles.img} src={menu.display.img}
+            <div style={styles.container}>
+                <img style={styles.img} src={display.img}
                     alt="connect to internet"
                 />
-                <p>{menu.display.text}</p>
+                <p>{display.text}</p>
             </div>
-            }
         </>
     )
-
-    // if(prop.menu.name === "Songs") {
-    //     return(
-    //         <>
-    //         <Menu menu = {display.subMenu}/>
-    //         </>
-    //     )
-    // }
-    // else {
-    //     return (
-    //         <div style = {styles.container}>
-    //             <img style = {styles.img} src = {display.img} alt = "connect to internet"/>
-    //             <p>{display.text}</p>
-    //         </div>
-    //     );
-    // }
-    // return (
-    //     <div style = {styles.container}>
-    //         <img style = {styles.img} src = {prop.menu.display.img} alt = "connect to internet"/>
-    //         <p>{prop.menu.display.text}</p>
-    //     </div>
-    // );
+   
 }
 
 const styles = {

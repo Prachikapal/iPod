@@ -4,7 +4,7 @@ import ZingTouch from 'zingtouch';
 
 class Keys extends React.Component {
 
-    //wheel spinning functionality is written here
+    // wheel spinning functionality is written here
     componentDidMount = () => {
         let listenerElement = document.getElementById('container');
         var zt = new ZingTouch.Region(listenerElement);
@@ -12,11 +12,9 @@ class Keys extends React.Component {
             let dis = e.detail.distanceFromLast;
             if(dis >= 5) {
                 this.props.onClockwiseRotation();
-                console.log("Clockwise",dis);
             }
             else if(dis <= -5) {
                 this.props.onAntiClockwiseRotation();
-                console.log("anti-Clockwise",dis);
             }
         },false);
     }

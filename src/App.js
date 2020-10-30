@@ -10,66 +10,44 @@ class App extends React.Component {
     this.state = {
       menu: [
         {
-          id : 0,
           name: "Music",
           active: "active-menu",
           screen: false,
-          display : {
-            subMenu : 
-            [
-              {
-                name : "Songs",
-                active: "active-menu",
-              },
-              {
-                name : "Albums",
-                active : "",
-              },
-              {
-                name : "Artists",
-                active : "",
-              }
-            ]
+          display : 
+          {
+            img: "https://www.flaticon.com/svg/static/icons/svg/709/709559.svg",
+            text : "",
           }
-          // display : 
-          // {
-          //   img: "https://i.pinimg.com/564x/50/a5/7b/50a57b129648f0a8b8787c6ebf6a2ffc.jpg",
-          //   text : "",
-          // }
-          // img: "https://www.flaticon.com/svg/static/icons/svg/709/709559.svg"
         },
         {
-          id : 1,
           name: "Calendar",
           active: "",
           screen: false,
           display:
           {
             img: "https://www.flaticon.com/svg/static/icons/svg/3652/3652191.svg",
-            text : "It's 2020!"
+            text: "It's 2020!"
           }
         },
         {
-          id : 2,
           name: "Games",
           active: "",
           screen: false,
-          display : {
+          display: {
             img: "https://www.flaticon.com/svg/static/icons/svg/229/229800.svg",
-            text : "Let's play Ludo!!"
+            text: "Let's play Ludo!!"
           }
-          
+
         },
         {
-          id : 3,
           name: "Settings",
           active: "",
           screen: false,
-          display : {
+          display: {
             img: "https://www.flaticon.com/svg/static/icons/svg/3524/3524636.svg",
-            text : "Settings"
+            text: "Settings"
           }
-          
+
         }
       ]
     }
@@ -140,7 +118,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="mobile">
-        <Screen menu={this.state.menu} />
+        <Screen menu={this.state.menu}/>
         <Keys
           onClockwiseRotation={this.changeActiveClass}
           onAntiClockwiseRotation={this.changeActiveClassAnti}

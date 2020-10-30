@@ -3,7 +3,9 @@ import "./index.css";
 import Display from "./Display";
 import Menu from "./Menu";
 
+
 function Screen(prop) {
+
 
     let flag = true ;
     let i;

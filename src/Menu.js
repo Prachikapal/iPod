@@ -2,10 +2,10 @@ import React from "react";
 import List from "./list";
 
 function Menu(prop) {
+
     return (
         <>
             <div className="screen">
-                {console.log("Screen Deactive")}
                 <ul style={styles.list}>
                     <li style={styles.listItem}><strong>iPod.js</strong></li>
                     {
@@ -18,6 +18,7 @@ function Menu(prop) {
         </>
     )
 }
+
 
 const styles = {
     list: {
