@@ -30,6 +30,9 @@ code {
   height: 255px;
   border: 2px solid black;
   border-radius: 5px;
+  background-image: url("https://i.pinimg.com/564x/c6/46/5f/c6465f952b0f9342c91c17dd5c26df42.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .keys {
@@ -40,5 +43,16 @@ code {
   border-bottom-left-radius : 20px;
   border-bottom-right-radius : 20px;
 }
+
+.active-menu {
+  background-color: rgb(29, 133, 202);
+  color: white;
+}
+
+.active-menu::after {
+  content : ">";
+}
+
+
 
 
