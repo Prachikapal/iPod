@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import Keys from "./Keys";
-import Screen from "./Screen";
+import Screen from "./screen/Screen";
 
 class App extends React.Component {
 
